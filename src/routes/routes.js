@@ -3,7 +3,7 @@ import paymentsController from '../controllers/paymentsController.js';
 
 const router = Router();
 
-router.get('/teste', paymentsController.home);
-router.get('/', paymentsController.creatPayment);
+router.get('/', paymentsController.home);
+router.get('/payments', paymentsController.creatPayment);
 
 export default router;
