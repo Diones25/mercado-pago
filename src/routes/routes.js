@@ -6,6 +6,7 @@ const router = Router();
 
 router.get('/', productController.create);
 router.get('/list', productController.list);
+router.get('/dashboard', productController.dashboard);
 router.get('/payment', paymentsController.createPay);
 //router.get('/payments', paymentsController.creatPayment);
 
