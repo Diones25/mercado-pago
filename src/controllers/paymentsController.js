@@ -9,6 +9,16 @@ const home = (req, res) => {
   res.send('Hello Home')
 }
 
+/*
+const createPayment = (req, res) => {
+  res.render("payment.ejs")
+}
+*/
+
+const createPay = (req, res) => {
+  res.render("payment.ejs")
+}
+
 const creatPayment = async (req, res) => {
 
   const id = ""+Date.now();
@@ -45,5 +55,6 @@ const creatPayment = async (req, res) => {
 
 export default {
   home,
-  creatPayment
+  creatPayment,
+  createPay
 }
