@@ -1,8 +1,11 @@
 import mercadoPago from 'mercadopago';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 mercadoPago.configure({
   sandbox: true,
-  access_token: "TEST-2145823385260047-013022-63190c3625798c9cfa7854becac9fb90-141916951"
+  access_token: process.env.ACCESS_TOKEN
 });
 
 const home = (req, res) => {
